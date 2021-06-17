@@ -1,0 +1,10 @@
+base:
+  version: VERSION
+  css:
+    components:
+      css/components/action-links.css: { weight: -10 }
+
+media_embed_ckeditor_theme:
+  version: VERSION
+  js:
+    js/media_embed_ckeditor.theme.js: {}

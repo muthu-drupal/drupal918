@@ -1,0 +1,6 @@
+name: Muthu
+type: theme
+base theme: stable
+description: 'Custom theme for learning purpose.'
+core_version_requirement: ^8 || ^9
+package: Custom
