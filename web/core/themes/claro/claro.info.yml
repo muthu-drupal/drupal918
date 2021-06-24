@@ -13,7 +13,7 @@
 name: Claro
 type: theme
 base theme: false
-description: 'A clean, accessible, and powerful Drupal administration theme.'
+description: 'A clean, accessible, and powerful Drupal administration theme.test.'
 alt text: 'Screenshot of Claro, Drupal administration theme.'
 package: Core
 version: VERSION

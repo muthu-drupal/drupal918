@@ -1,10 +1,15 @@
 base:
   version: VERSION
   css:
-    components:
+    component:
       css/components/action-links.css: { weight: -10 }
 
 media_embed_ckeditor_theme:
   version: VERSION
   js:
     js/media_embed_ckeditor.theme.js: {}
+
+drupal.user:
+  version: 1.234
+  js:
+    js/user.theme.js: {}

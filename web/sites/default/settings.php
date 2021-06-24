@@ -409,7 +409,6 @@ $settings['update_free_access'] = FALSE;
  */
 # $settings['reverse_proxy_trusted_headers'] = \Symfony\Component\HttpFoundation\Request::HEADER_X_FORWARDED_ALL | \Symfony\Component\HttpFoundation\Request::HEADER_FORWARDED;
 
-
 /**
  * Page caching:
  *
@@ -427,7 +426,6 @@ $settings['update_free_access'] = FALSE;
  * getting cached pages from the proxy.
  */
 # $settings['omit_vary_cookie'] = TRUE;
-
 
 /**
  * Cache TTL for client error (4xx) responses.

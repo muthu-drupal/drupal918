@@ -1,6 +1,29 @@
 name: Muthu
 type: theme
-base theme: stable
+base theme: false
 description: 'Custom theme for learning purpose.'
 core_version_requirement: ^8 || ^9
 package: Custom
+libraries:
+  - muthu/drupal.user
+libraries-override:
+  system/base:
+    css:
+      component:
+        css/components/item-list.module.css: false
+
+regions:
+  header: Header
+  primary_menu: 'Primary Menu'
+  secondary_menu: 'Secondary Menu'
+  breadcrumb: Breadcrumb
+  highlighted: Highlighted
+  help: Help
+  content: Content
+  sidebar_first: 'First Sidebar'
+  sidebar_second: 'Second Sidebar'
+  footer: 'Footer'
+  page_top: 'Page Top'
+  page_bottom: 'Page Bottom'
+regions_hidden:
+  - sidebar_first

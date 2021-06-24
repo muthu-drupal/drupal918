@@ -1,0 +1,5 @@
+name: Welcome module
+type: module
+description: 'Custom module for learning purpose.'
+package: Custom
+core_version_requirement: ^8.8 | ^9
