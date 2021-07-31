@@ -3,10 +3,6 @@
   "description": "Drupal is an open source content management platform powering millions of websites and applications.",
   "license": "GPL-2.0",
   "private": true,
-  "workspaces": [
-    "web/modules/custom/*",
-    "web/themes/custom/*"
-  ],
   "engines": {
     "yarn": ">= 1.6",
     "node": ">= 12.0"
@@ -66,7 +62,6 @@
     "stylelint": "^13.0.0",
     "stylelint-checkstyle-formatter": "^0.1.1",
     "stylelint-config-standard": "^20.0.0",
-    "stylelint-no-browser-hacks": "^1.2.1",
     "stylelint-order": "^4.0.0",
     "terser": "^5.3.4"
   },

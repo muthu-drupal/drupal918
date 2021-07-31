@@ -9,7 +9,7 @@ user.settings:
       label: 'Name'
     verify_mail:
       type: boolean
-      label: 'Require email verification when a visitor creates an account 2'
+      label: 'Require email verification when a visitor creates an account'
     notify:
       type: mapping
       label: 'Notify user'
