@@ -1,7 +1,7 @@
 welcome_module.welcome:
-  path: 'welcome/page'
+  path: '/admin/welcome/page'
   defaults:
-    _controller: 'Drupal\welcome_module\Controller\WelcomeController::welcome'
+    _controller: '\Drupal\welcome_module\Controller\WelcomeController::welcome'
     _title: 'Welcome to my custom module'
   requirements:
     _permission: 'access content'
@@ -9,7 +9,7 @@ welcome_module.welcome:
 welcome_module.hello:
   path: '/hello'
   defaults:
-    _form: 'Drupal\welcome_module\Form\HelloForm'
+    _form: '\Drupal\welcome_module\Form\HelloForm'
     _title: 'Simple custom form example'
   requirements:
     _user_is_logged_in: 'TRUE'

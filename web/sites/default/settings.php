@@ -785,3 +785,5 @@ if (isset($_SERVER['DEVDESKTOP_DRUPAL_SETTINGS_DIR']) && file_exists($_SERVER['D
   require $_SERVER['DEVDESKTOP_DRUPAL_SETTINGS_DIR'] . '/loc_drupal918_dd.inc';
 }
 // </DDSETTINGS>
+
+$settings['config_sync_directory'] = '/Users/user/Sites/drupal918/config';

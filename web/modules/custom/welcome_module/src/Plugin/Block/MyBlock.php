@@ -22,7 +22,7 @@ class MyBlock extends BlockBase {
    */
   public function build() {
     return [
-      '#markup' => $this->t('This is Simple block!'),
+      '#markup' => $this->configuration['my_block_settings'],
     ];
   }
 
@@ -37,7 +37,12 @@ class MyBlock extends BlockBase {
    * {@inheritdoc}
    */
   public function blockForm($form, FormStateInterface $form_state) {
-    $config = $this->getConfiguration();
+    $form['my_block_settings'] = [
+      '#type'          => 'textfield',
+      '#title'         => $this->t('Please enter the text to display on the block.'),
+      '#description'   => $this->t('Please enter the text to display on the block.'),
+      '#default_value' => $this->configuration['my_block_settings'],
+    ];
 
     return $form;
   }

@@ -39,6 +39,30 @@ class HelloForm extends Formbase {
       '#description' => $this->t('Please read the terms and condition'),
     ];
 
+    $form['needs_accommodation'] = [
+      '#type'  => 'checkbox',
+      '#title' => $this
+        ->t('Need Special Accommodations?'),
+    ];
+    $form['accommodation'] = [
+      '#type'       => 'container',
+      '#attributes' => [
+        'class' => 'accommodation',
+      ],
+      '#states'     => [
+        'invisible' => [
+          'input[name="needs_accommodation"]' => [
+            'checked' => FALSE,
+          ],
+        ],
+      ],
+    ];
+    $form['accommodation']['diet'] = [
+      '#type'  => 'textfield',
+      '#title' => $this
+        ->t('Dietary Restrictions'),
+    ];
+
     $form['actions'] = [
       '#type' => 'actions',
     ];
