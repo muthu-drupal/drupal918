@@ -86,5 +86,9 @@
                 "      composer remove drupal/core-project-message"
             ]
         }
+    },
+    "require-dev": {
+        "behat/mink": "^1.8",
+        "phpunit/phpunit": "^9.5"
     }
 }
