@@ -1,0 +1,24 @@
+<?php
+
+use Drupal\Core\Link;
+use Drupal\Core\Routing\RouteMatchInterface;
+use Drupal\Core\Url;
+
+function welcome_module_help($route_name, RouteMatchInterface $route_match) {
+  switch ($route_name) {
+  case 'help.page.welcome_module':
+    //\Drupal::logger('user')->notice('%name visited welcome_module help page.', ['%name' => $user->getAccountName()]);
+    $user      = \Drupal::currentUser();
+    $myservice = \Drupal::service('my.custom.service');
+    $link      = t('Hello :user_name!,  <a href=":page_url" >Sample page</a>',
+      [
+        ':user_name' => $user->getDisplayName(),
+        ':page_url'  => Url::fromRoute('welcome_module.welcome')->toString(),
+      ]
+    ) . '<br>';
+    $link .= Link::fromTextAndUrl('Sample URL', Url::fromRoute('welcome_module.hello'))->toString();
+    return $myservice->doSomeThing() . $link;
+
+  }
+
+}

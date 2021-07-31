@@ -1,0 +1,7 @@
+welcome_module.hello:
+  title: 'Simple form for testing'
+  description: 'Configuration for simple form'
+  parent: system.admin_config_developement
+  route_name: welcome_module.hello
+  weight: 100
+  enabled: 1

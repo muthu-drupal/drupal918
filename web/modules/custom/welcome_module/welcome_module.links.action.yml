@@ -1,0 +1,5 @@
+welcome_module.hello:
+  route_name: welcome_module.hello
+  title: 'Custom form'
+  appears_on:
+    - welcome_module.welcome
