@@ -785,5 +785,13 @@ if (isset($_SERVER['DEVDESKTOP_DRUPAL_SETTINGS_DIR']) && file_exists($_SERVER['D
   require $_SERVER['DEVDESKTOP_DRUPAL_SETTINGS_DIR'] . '/loc_drupal918_dd.inc';
 }
 // </DDSETTINGS>
-
+// $_SERVER['DEVDESKTOP_DRUPAL_SETTINGS_DIR'] => /Users/muthusel/.acquia/DevDesktop/DrupalSettings
 $settings['config_sync_directory'] = '/Users/user/Sites/drupal918/config';
+
+$databases['default']['default'] = array(
+  'driver'   => 'mysql',
+  'database' => 'drupal918',
+  'username' => 'drupaluser',
+  'password' => '',
+  'host'     => '127.0.0.1',
+  'port'     => 33067);

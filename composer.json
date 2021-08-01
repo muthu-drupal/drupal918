@@ -89,6 +89,8 @@
     },
     "require-dev": {
         "behat/mink": "^1.8",
-        "phpunit/phpunit": "^9.5"
+        "phpspec/prophecy-phpunit": "^2.0",
+        "phpunit/phpunit": "^9.5",
+        "symfony/phpunit-bridge": "^5.3"
     }
 }
