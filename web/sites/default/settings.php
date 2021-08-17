@@ -795,3 +795,12 @@ $databases['default']['default'] = array(
   'password' => '',
   'host'     => '127.0.0.1',
   'port'     => 33067);
+
+/**
+ * Disable Dynamic Page Cache.
+ *
+ * Note: you should test with Dynamic Page Cache enabled, to ensure the correct
+ * cacheability metadata is present (and hence the expected behavior). However,
+ * in the early stages of development, you may want to disable it.
+ */
+# $settings['cache']['bins']['dynamic_page_cache'] = 'cache.backend.null';
